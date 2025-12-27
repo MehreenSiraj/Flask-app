@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ request.url }}">
+
+  <!-- SEO -->
+  <meta name="robots" content="index, follow">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

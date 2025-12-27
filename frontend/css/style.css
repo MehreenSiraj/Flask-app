@@ -1,0 +1,39 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f9fafb;
+  color: #111827;
+}
+
+main {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 24px;
+  padding: 16px;
+  background: #e0f2fe;
+}

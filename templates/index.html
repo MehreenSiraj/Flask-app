@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Bra Size Calculator</h1>
+
+<p>Enter your measurements to find your correct bra size.</p>
+
+<form method="POST">
+  <label>
+    Underbust (inches)
+    <input type="number" name="underbust" step="0.1" required>
+  </label>
+
+  <label>
+    Bust (inches)
+    <input type="number" name="bust" step="0.1" required>
+  </label>
+
+  <button type="submit">Calculate</button>
+</form>
+
+{% if bra_size %}
+  <section class="result">
+    <h2>Your Bra Size</h2>
+    <strong>{{ bra_size }}</strong>
+  </section>
+{% endif %}
+{% endblock %}
